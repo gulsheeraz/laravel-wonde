@@ -7,7 +7,7 @@ This is a simple bridge for the Wonde LTD API, using Graham Campbell's Laravel M
 Add this package to your composer.json file:
 
 ```
-composer require gul-sheeraz/laravel-wonde
+composer require gulsheeraz/laravel-wonde
 ```
 
 Depending on your version of Laravel, it may be necessary to add your Service Provider to your `config/app.php` file:

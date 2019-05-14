@@ -1,6 +1,6 @@
 {
-  "name": "gul-sheeraz/laravel-wonde",
-  "description": "This is a bridge package for the Wonde API Client.",
+  "name": "gulsheeraz/laravel-wonde",
+  "description": "This is a bridge package for the Wonde API Client for Laravel.",
   "keywords": [
     "laravel",
     "framework",
