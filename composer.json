@@ -1,0 +1,57 @@
+{
+  "name": "gul-sheeraz/laravel-wonde",
+  "description": "This is a bridge package for the Wonde API Client.",
+  "keywords": [
+    "laravel",
+    "framework",
+    "wonde",
+    "wonde ltd",
+    "wondeltd",
+    "laravel-wonde",
+    "wonde laravel",
+    "sheeraz gul",
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sheeraz Gul",
+      "email": "rahuja.sheeraz@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "illuminate/contracts": "^5.5.*",
+    "illuminate/support": "^5.5.*",
+    "graham-campbell/manager": "^3.0",
+    "wondeltd/php-client": "^1.4.*"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "^6.1",
+    "graham-campbell/testbench": "^4.0"
+  },
+  "suggest": {
+  },
+  "autoload": {
+    "psr-4": {
+      "SheerazGul\\LaravelWonde\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SheerazGul\\Tests\\LaravelWonde\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SheerazGul\\LaravelWonde\\WondeServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

@@ -1,0 +1,22 @@
+language: php
+
+sudo: false
+
+matrix:
+  include:
+    - php: 7.0
+      env: LARAVEL_VERSION=5.5.*
+    - php: 7.1
+      env: LARAVEL_VERSION=5.5.*
+    - php: 7.2
+      env: LARAVEL_VERSION=5.5.*
+    - php: hhvm
+      env: LARAVEL_VERSION=5.5.*
+      dist: trusty
+
+install:
+  - composer require "laravel/framework:${LARAVEL_VERSION}" --no-update -n
+  - travis_retry composer install --no-suggest --prefer-dist -n -o
+
+script:
+  - vendor/bin/phpunit
